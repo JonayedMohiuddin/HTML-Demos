@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>audio.html</title>
+  </head>
+  <body>
+    <h1>Audio Demo</h1>
+    <audio controls = "controls">
+      <source src = "Allemande.mp3" type = "audio/mpeg">
+        <source src = "Allemande.ogg" type = "audio/ogg">
+          Your browser does not support HTML5 Audio
+          Please use this link instead:
+          <a href = "Allemande.mp3">Allemande.mp3</a>
+    </audio>
+    <p>
+      Music: J.S. Bach "Allemande" Partita for Violin #2
+    </p>
+  </body>
+</html>
+
+<!--
+To add an audio file to your page, follow these steps: 
+1. Add the audio tag to your page. The <audio> tag indicates where an 
+audio file will be placed. Where you place the tag in the code corre-
+sponds to where the controls will appear.
+2. Turn on controls. You can specify a control panel with the controls 
+= “controls” attribute. This causes a small control like the one in 
+Figure 6-19 to appear. If you leave this directive out, there will be no 
+control panel, which means the user will not be able to play the clip.
+3. Create a <source> element or two. Inside the <audio></audio> pair, 
+add one or more <source> elements. Each source element indicates a 
+file you will link to.
+4. Set the src attribute to indicate the file. The src attribute of the 
+<source> tag (could we please have one more thing with almost the 
+same name here?) is used to indicate the file name of the audio file you 
+wish to play.
+5. Add alternate code for older browsers. Any additional HTML 
+code between the <sound> and <sound> tags will be interpreted 
+only by browsers that do not understand the sound tag. You can 
+add an ordinary anchor to download the sound effect if you 
+wish. This way, even those with older browsers can hear what 
+they’re missing.
+-->
