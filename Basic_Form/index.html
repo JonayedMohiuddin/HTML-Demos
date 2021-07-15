@@ -2,27 +2,101 @@
 <html lang = "en-US"> 
   <head>
     <meta charset = "UTF-8">
-    <title>fieldsetDemo.html</title>
+    <title>formDemo.html</title>
   </head>
-  
+
   <body>
-    <h1>Sample Form with a Fieldset</h1>
-    
+    <h1>Form Demo</h1>
+
     <form action = "">
       <fieldset>
-        <legend>Personal Data</legend>
+        <legend>Text Input</legend>
         <p>
-          <label>Name</label>
-          <input type = "text" />
+          <label>Text Box</label>
+          <input type = "text"
+            id = "txtBox"
+            value = "Text Here"/>
         </p>
         <p>
-          <label>Address</label>
-          <input type = "text" />
+          <label>Password</label>
+          <input type = "password"
+            id = "pwd"
+            value = "secret"/>
         </p>
         <p>
-          <label>Phone</label>
-          <input type = "text" />
+          <label>Text Area</label>
         </p>
+        <p>
+          <textarea id = "txtAnswer"
+            rows = "10"
+            cols = "40">Your text here</textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Selecting Elements</legend>
+
+        <p>
+          <label>Select List</label>
+          <select id = "selList">
+            <option value = "#ff0000">Red</option>
+            <option value = "#00ff00">Green</option>
+            <option value = "#0000ff">Blue</option>
+            <option value = "#00ffff">Cyan</option>
+            <option value = "#ff00ff">Magenta</option>
+            <option value = "#ffff00">Yellow</option>
+            <option value = "#000000">Black</option>
+            <option value = "#ffffff">White</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Check Boxes</label>
+
+          <input type = "checkbox"
+            id = "chkGreenEggs"
+            value = "eggs"/>Green Eggs
+
+          <input type = "checkbox"
+            id = "chkHamBurger"
+            value = "ham"/>Ham Burger
+
+          <input type = "checkbox"
+            id = "chkRoastedBeef"
+            value = "beef"/>Roasted Beef
+        </p>
+
+        <p>
+          <label>Rabio Buttons</label>
+
+          <input type = "radio"
+            name = "radSize"
+            id = "radSmall"
+            value = "100"/>Small
+
+          <input type = "radio"
+            name = "radSize"
+            id = "radMid"
+            value = "500"/>Medium
+
+          <input type = "radio"
+            name = "radSize"
+            id = "radLarge"
+            value = "5000"
+            checked = "checked"/>Large
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Buttons</legend>
+        
+        <button type = "button">
+          Standard Button
+        </button>
+        <input type = "button" value = "Input type=Button" />
+        <input type = "reset" />
+        <input type = "submit" />
+          
       </fieldset>
     </form>
   </body>
